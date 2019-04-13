@@ -27,7 +27,7 @@ config.oAuthclientSecret = 'Gyn5tXBsybrktwSbm0AWSf5q';
 config.oAuthCallbackUrl = 'http://localhost:4200/auth/google/callback';
 
 // The port where the app should listen for requests.
-config.port = 4200;
+config.port = process.env.PORT || 4200;
 
 // The scopes to request. The app requires the photoslibrary.readonly and
 // plus.me scopes.
